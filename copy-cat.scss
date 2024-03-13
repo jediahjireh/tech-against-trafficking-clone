@@ -410,6 +410,11 @@ a {
     float: inline-end;
 }
 
+//change cursor when arrow image is hovered over
+.arrowClick {
+    cursor: pointer;
+}
+
 //footer customisation
 footer {
     padding-left: 160px;
