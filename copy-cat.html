@@ -1,0 +1,301 @@
+<!-- referenced HyperionDev's "index.html" file in the "11-001 Your First Computer Program" folder
+    for code structure on how to link this html file to a javacript file -->
+<!doctype html>
+
+<html lang="en"> <!-- indicates language of file - English -->
+
+<head>
+    <!-- referenced HyperionDev's YouTube task video (https://youtu.be/39SzSGJ09u8?si=hU-iMWieIBfwhgHK)
+        for HTML UNICODE (encoding system) so that special characters are defined and can output correctly -->
+    <meta charset="UTF-8">
+    <title>
+        <Tech Against Trafficking>
+    </title>
+
+    <!-- link to copy-cat.scss file -->
+    <link rel="stylesheet" href="copy-cat.css" type="text/css">
+
+    <!-- link to font file 
+    received primary font from website's developer inspect element -->
+    <link href="https://fonts.cdnfonts.com/css/barlow" rel="stylesheet">
+
+</head>
+
+<!-- referenced HyperionDev's "05-002-2 HTML Overview" pdf
+    source referenced for guidance on HTML structure and syntax -->
+<!-- referenced HyperionDev's "05-005-1 CSS Overview" pdf
+    source referenced for guidance on CSS structure and syntax -->
+<!-- referenced HyperionDev's "05-008 SCSS" pdf
+    source referenced for guidance on SCSS structure and syntax
+    source referenced for guidance on the Live Sass Compiler -->
+
+<body>
+    <!-- styling (in "copy-cat.html", "copy-cat.scss" and "_align-format.scss")
+        caters for display of form in Google Chrome and is most accurate at fullscreen size.
+        the form may appear differently in other browsers (such as Safari) -->
+    <header>
+        <!-- logo -->
+        <img class="logo" src="images/logo.png" alt="Tech Against Trafficking logo" width="175" />
+        <!-- index -->
+        <nav id="index">
+            <b>
+                <!-- redirect to the webpages that the original website index item links would redirect a user to
+                    referenced https://hea-www.harvard.edu/~fine/Tech/html-sentences.html
+                    website referenced for guidance on spacing entities (namely "&emsp;") -->
+                <h4>&emsp; ABOUT &emsp; ACCELERATOR PROGRAM &emsp;
+                    <a href="https://techagainsttrafficking.org/news-events/">NEWS & EVENTS</a> &emsp;
+                    <a href="https://techagainsttrafficking.org/interactive-map/">INTERACTIVE MAP</a> &emsp;
+                    <a href="https://techagainsttrafficking.org/contact-us/">CONTACT US</a>
+                </h4>
+            </b>
+        </nav>
+    </header>
+
+    <main>
+        <img id="background" src="images/background.jpg" alt="Tech Against Trafficking background" />
+
+        <h1 id="description" class="underlineMain">
+            COMPANIES COLLABORATING<br>
+            WITH GLOBAL EXPERTS TO<br>
+            HELP ERADICATE HUMAN<br>
+            TRAFFICKING USING<br>
+            TECHNOLOGY
+        </h1>
+
+        <nav>
+            <!-- GET form -->
+            <form id="joinForm" action="/copy-cat.html" method="GET">
+                <a href="https://techagainsttrafficking.org/contact-us/">
+                    <input type="submit" value="JOIN US" class="joinButton" style="shape-rendering: crispEdges;">
+                </a>
+            </form>
+        </nav>
+
+        <div class="transparentBackground">
+            <h2 id="announcement" class="underlineAnnouncement">
+                Tech Against Trafficking is now a workstream of GBCAT!
+            </h2>
+            <p id="announcementExplanation">
+                Tech Against Trafficking is now a workstream of the
+                <b>
+                    <a href="https://www.gbcat.org">Global Business Coalition Against Trafficking (GBCAT)</a>
+                </b>
+                , which brings together companies across sectors to combat<br>
+                human trafficking in company operations and supply chains. In addition to the work done by Tech Against
+                Trafficking, GBCAT's other workstreams focus on Corporate Supplier<br>
+                Capacity Building and Survivor Empowerment & Employment.
+            </p>
+        </div>
+
+        <div class="lightMode">
+
+            <section class="secondaryHeading">
+                <h3>
+                    Our Mission
+                </h3>
+            </section>
+
+            <p id="mission">
+                Our mission is to work with civil society, law enforcement,
+                academia, technologists, and survivors to advance and scale the
+                use of technology to prevent, disrupt, and reduce human
+                trafficking and increase and expand survivors' access to
+                resources.
+            </p>
+
+            <section class="secondaryHeading">
+                <h3>
+                    Why Tech Against Trafficking?
+                </h3>
+            </section>
+
+            <article class="columnFormat">
+                <div class="columnParagraph1">
+                    <p id="nextToNumber">
+                        <b>Human trafficking is a complex, thriving crime that impacts every country:</b>
+                        There are an estimated 50 million people worldwide subjected to some form of modern slavery.
+                        Given
+                        the
+                        widespread nature of this
+                        crime and the complexity of tackling it, increased engagement from all stakeholders, including
+                        and
+                        especially the private sector, is vital.
+                        <br><br>
+                        Through their expertise, capacity for innovation, and global reach, technology companies can
+                        play a
+                        major role in preventing and disrupting human trafficking and in empowering survivors. Digital
+                        information and communication technologies offer opportunities for a step change in tackling
+                        this
+                        crime.
+                    </p>
+                </div>
+
+                <div class="columnParagraph2">
+                    <!-- in line -->
+                    <h4 id="count">
+                        49.6M
+                    </h4>
+                    <h6 id="numberExplanation">
+                        PEOPLE IN MODERN SLAVERY
+                    </h6>
+                </div>
+            </article>
+
+            <p id="lastParagraph">
+                Technological solutions to date include mobile apps that help identify victims of sex trafficking;
+                satellite imagery that tracks down fishing vessels carrying victims of forced labor; and web scraping
+                tools that aggregate child abuse images to help law enforcement track down children in need of help. But
+                there are many more tools out there in need of support. Tech Against Trafficking hopes to accelerate the
+                development, scale, and resulting impact of these tools.
+            </p>
+        </div>
+
+        <article id="quote">
+            <!-- quote image -->
+            <img class="quoteImage" src="images/quotationMarks.png" alt="Tech Against Trafficking Image Quote" />
+            <br><br>
+            <!-- change text displayed when arrow is clicked (checked) -->
+            <input type="checkbox" id="arrow">
+            <label for="arrow">
+                <img class="arrowClick" src="images/arrow.png" alt="Arrow icon">
+            </label>
+
+            <div id="quotations">
+                <p id="quote1" class="hide">
+                    <i>
+                        ANNOUNCING A NEW COLLABORATION USING TECH TO COMBAT HUMAN TRAFFICKING - BSR
+                    </i>
+                    <br><br>
+                    “Business engagement is essential in the global fight against modern slavery, and it's great to
+                    see these organizations leading the way in their commitment to the issue. They bring a fantastic
+                    amount of technical expertise, in addition to huge clout. Technology offers transformational
+                    potential not just to disrupt and reduce modern slavery, but to support care and remedy
+                    mechanisms for survivors. We look forward to working together in partnership in the fight to end
+                    slavery for good.” - Andrew Wallis, OBE, CEO of anti-slavery charity Unseen
+                    <br><br>
+                    <b>
+                        Article linked <a
+                            href="https://www.bsr.org/en/blog/announcing-a-new-collaboration-using-tech-to-combat-human-trafficking">here.</a>
+                    </b>
+                </p>
+
+                <p id="quote2" class="hide">
+                    <i>
+                        “TECH TOOLS CAN LEAD FIGHT AGAINST MODERN SLAVERY, SAYS U.N. EXPERT” - Reuters
+                    </i>
+                    <br><br>
+                    “It (technology) definitely presents both a threat and an opportunity. But the opportunities for
+                    using tech as a tool to identify people who are in modern slavery and to assist them are far greater
+                    and they outweigh the threat." - Urmila Bhoola, UN Special Rapporteur on contemporary forms of
+                    slavery
+                    <br><br>
+                    <b>
+                        Article linked <a href="https://news.trust.org/item/20190903163445-c0xau">here.</a>
+                    </b>
+                </p>
+                <!--
+                <p id="quote3" class="hide">
+                    <i>
+                        “SCALING IMPACT: TECH AGAINST TRAFFICKING LAUNCHES ACCELERATOR PROGRAM"- BSR
+                    </i>
+                    “A lack of good evidence has long hampered counter-trafficking efforts. The prospect of what can be
+                    achieved by bringing together the capacity and expertise of the counter-trafficking community and
+                    the private sector is exciting.” - Harry Cook, data management and research specialist at IOM and
+                    lead of the CTDC
+                    <br><br>
+                    <b>
+                        Article linked <a
+                            href="https://www.bsr.org/en/blog/scaling-impact-tech-against-trafficking-launches-accelerator-program">here.</a>
+                    </b>
+                </p>
+                -->
+            </div>
+        </article>
+    </main>
+
+    <!-- call function from "align-format" -->
+    <article class="lightMode">
+        <section class="secondaryHeading">
+            <h3>
+                Latest News & Insights
+            </h3>
+        </section>
+
+        <article class="columnFormat">
+            <div class="column">
+                <!-- article 1 -->
+                <img id="inlineImage1" src="images/image1.jpg" alt="Tech Against Trafficking Summit image" />
+                <div class="articleContent">
+                    <h4 class="articleHeading">
+                        <b>
+                            Tech Against Trafficking Summit: Leveraging Technology to Eradicate Forced Labor
+                        </b>
+                    </h4>
+                    <p class="byline-date">
+                        BY <a href="https://techagainsttrafficking.org/author/tech-against-trafficking/">TECH
+                            AGAINST
+                            TRAFFICKING</a> / DECEMBER 15, 2023
+                    </p>
+                    <p class="articleText">
+                        Key Points The second Tech Against Trafficking (TAT) Summit brought together over 140 global
+                        anti-trafficking leaders, including businesses, civil society,...
+                    </p>
+                    <a class="readMore"
+                        href="https://techagainsttrafficking.org/tech-against-trafficking-summit-leveraging-technology-to-eradicate-forced-labor/">Read
+                        More &emsp;➔</a>
+                </div>
+            </div>
+
+            <div class="column">
+                <!-- article 2 -->
+                <img id="inlineImage2" src="images/image2.jpg" alt="Tech Against Trafficking Joins GBCAT image" />
+                <div class="articleContent">
+                    <h4 class="articleHeading">
+                        <b>
+                            Tech Against Trafficking Joins GBCAT for Expanded Impact and Scale.
+                        </b>
+                    </h4>
+                    <p class="byline-date">
+                        BY <a href="https://techagainsttrafficking.org/author/tech-against-trafficking/">TECH
+                            AGAINST
+                            TRAFFICKING</a> / AUGUST 10, 2023
+                    </p>
+
+                    <p class="articleText">
+                        Just a few days prior to World Day Against Trafficking, Tech Against Trafficking announced
+                        that it is officially a workstream...
+                    </p>
+                    <a class="readMore"
+                        href="https://techagainsttrafficking.org/tech-against-trafficking-joins-gbcat-for-expanded-impact-and-scale/">Read
+                        More &emsp;➔</a>
+                </div>
+            </div>
+        </article>
+    </article>
+
+    <footer>
+        <br><br>
+        <div id="closing">
+            <!-- logo -->
+            <img class="logo" src="images/logo.png" alt="Tech Against Trafficking logo" />
+            <h2 id="contactPrompt">
+                <a href="https://techagainsttrafficking.org/contact-us/">CONTACT US</a>
+            </h2>
+            <h5 id="copy">
+                Made by <a href="https://anniecannons.org">AnnieCannons</a>
+                <br>
+                &copy; 2020
+            </h5>
+
+        </div>
+
+        <address>
+            <h6>
+                Website recreated: <a href="https://techagainsttrafficking.org">Tech Against Trafficking</a><br>
+                <i>by Jediah Jireh Naicker</i>
+            </h6>
+        </address>
+    </footer>
+</body>
+
+</html>

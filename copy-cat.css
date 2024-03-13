@@ -1,0 +1,367 @@
+/*
+referenced HyperionDev's "05-005-1 CSS Overview" pdf
+source referenced for guidance on CSS structure and syntax
+
+referenced HyperionDev's "05-008 SCSS" pdf
+source referenced for guidance on SCSS structure and syntax
+source referenced for guidance on the Live Sass Compiler
+
+referenced https://www.cdnfonts.com/barlow.font
+referenced https://www.w3schools.com/css/css3_fonts.asp
+websites referenced for guidance on how to import a font that is not typically recognised by CSS to the webpage
+
+NOTE:
+styling caters for display of form in Google Chrome and is most accurate at fullscreen size
+the form may appear differently in other browsers (such as Safari)
+*/
+@font-face {
+  font-family: "Barlow", sans-serif;
+  src: url(https://fonts.cdnfonts.com/css/barlow);
+  font-weight: 400;
+}
+.lightMode {
+  background-color: #fff;
+  font-family: "Barlow", sans-serif;
+  color: rgb(45, 47, 99);
+  border: 50px solid #fff;
+}
+
+formatContent, #closing, header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+formatItems, .columnParagraph1, .columnParagraph2, .columnFormat {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+/*
+referenced https://www.w3.org/Style/Examples/007/center.en.html#block
+website referenced for guidance on how to centre an image/a block of text
+
+.centreImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(16, 18, 78);
+  font-family: "Barlow", sans-serif;
+  color: rgb(252, 247, 244);
+}
+
+header {
+  background-color: rgb(16, 18, 78);
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  top: 0;
+  z-index: 1000;
+}
+header img {
+  float: inline-start;
+}
+
+#index {
+  color: rgb(252, 247, 244);
+  font-family: "Barlow", sans-serif;
+  cursor: pointer;
+  text-align: center;
+}
+#index a {
+  text-decoration: none;
+  color: rgb(252, 247, 244);
+}
+
+main {
+  color: rgb(252, 247, 244);
+  font-family: "Barlow", sans-serif;
+}
+
+#background img {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  image-rendering: optimizeQuality;
+  width: auto;
+  height: auto;
+}
+
+#description {
+  font-size: 51px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 69%;
+  text-align: left;
+  text-wrap: nowrap;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.underlineMain {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgb(29, 68, 228);
+  text-decoration-thickness: 30px;
+  text-underline-offset: -70%;
+}
+
+.joinButton {
+  background-color: rgb(236, 148, 84);
+  color: rgb(252, 247, 244);
+  width: 190px;
+  height: 70px;
+  font-family: "Barlow", sans-serif;
+  font-size: 36px;
+  font-weight: light;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 78%;
+  left: 52%;
+}
+
+.joinButton:hover {
+  background-color: rgb(252, 247, 244);
+  color: rgb(236, 148, 84);
+  cursor: pointer;
+}
+
+.transparentBackground {
+  position: absolute;
+  top: 120%;
+  transform: translate(7%, -55%);
+  width: 85%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+}
+
+#announcement {
+  font-size: xxx-large;
+}
+
+.underlineAnnouncement {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgb(15, 18, 82);
+  text-decoration-thickness: 22px;
+  text-underline-offset: -33%;
+}
+
+#announcementExplanation {
+  font-size: 16px;
+}
+
+#mission {
+  font-size: large;
+  color: rgb(22, 22, 22);
+  letter-spacing: 1px;
+}
+
+#nextToNumber {
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: rgb(22, 22, 22);
+  letter-spacing: 1px;
+}
+#nextToNumber b {
+  color: rgb(45, 47, 99);
+}
+
+#count {
+  font-size: 166px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#numberExplanation {
+  margin-top: 2px;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgb(209, 214, 251);
+  text-decoration-thickness: 5px;
+  text-underline-offset: -10%;
+}
+
+#lastParagraph {
+  text-align: left;
+  margin: 0;
+  margin-top: 0px;
+  font-size: 16px;
+  color: rgb(22, 22, 22);
+  letter-spacing: 1px;
+}
+
+a {
+  color: rgb(236, 148, 84);
+  cursor: pointer;
+}
+
+.byline-date {
+  font-weight: light;
+}
+
+.columnFormat {
+  background-color: #fff;
+  font-family: "Barlow", sans-serif;
+  color: rgb(45, 47, 99);
+  margin: 0px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.columnParagraph1, .columnParagraph2 {
+  width: 45%;
+  margin-bottom: 10px;
+  padding: 0px;
+  flex-direction: column;
+}
+
+.columnParagraph2 {
+  margin-bottom: 0px;
+}
+
+.column {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.articleContent {
+  padding: 0px;
+}
+
+.articleHeading {
+  color: #444444;
+  font-size: x-large;
+}
+
+.articleText {
+  font-size: large;
+  color: rgb(22, 22, 22);
+  letter-spacing: 1px;
+}
+
+#inlineImage1 {
+  height: 350px;
+  width: 550px;
+  shape-rendering: crispEdges;
+}
+
+#inlineImage2 {
+  height: 300px;
+  width: 550px;
+  shape-rendering: crispEdges;
+}
+
+.secondaryHeading h3 {
+  font-size: xxx-large;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-color: rgb(209, 214, 251);
+  text-decoration-thickness: 25px;
+  text-underline-offset: -37%;
+}
+
+.readMore {
+  width: 50%;
+  color: rgb(19, 4, 219);
+  background-color: #fff;
+  font-size: 26px;
+  font-weight: bolder;
+  text-decoration-color: #fff;
+}
+
+.readMore:hover {
+  color: black;
+  background-color: lightgray;
+}
+
+.quoteImage {
+  width: 100%;
+}
+
+#quote {
+  background-color: #101AFF;
+  color: #fff;
+  padding: 60px;
+}
+#quote i {
+  color: rgb(236, 148, 84);
+  font-weight: light;
+}
+
+.hide {
+  display: none;
+}
+
+#arrow {
+  display: none;
+}
+
+#arrow:checked ~ #quotations #quote1 {
+  display: block;
+}
+
+#arrow:not(:checked) ~ #quotations #quote2 {
+  display: block;
+}
+
+.arrowClick {
+  width: 50px;
+  float: inline-end;
+}
+
+footer {
+  padding-left: 160px;
+}
+
+#closing {
+  justify-content: space-between;
+  width: 80%;
+}
+#closing img {
+  margin-right: auto;
+}
+
+#copy {
+  font-weight: normal;
+  margin-left: auto;
+}
+
+#contactPrompt a {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(252, 247, 244);
+  letter-spacing: 1px;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+address {
+  font-weight: normal;
+  font-style: normal;
+}/*# sourceMappingURL=copy-cat.css.map */
