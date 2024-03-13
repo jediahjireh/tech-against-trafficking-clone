@@ -40,7 +40,7 @@ Below are screenshots of this project in action:
 - Original webpage’s content and design: [Tech Against Trafficking](https://techagainsttrafficking.org)
 - Project created by: [Jediah Jireh Naicker](https://github.com/jediahjireh)
 
-Feel free to reach out to me at [jediahnaicker@gmail.com](mailto: jediahnaicker@gmail.com) for inquiries!
+Feel free to reach out to me at [jediahnaicker@gmail.com](mailto:jediahnaicker@gmail.com) for inquiries!
 
 Thank you for checking out the **Tech Against Trafficking Clone** project. Together, we can harness our passion for technology to drive meaningful change.
 
