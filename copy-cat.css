@@ -1,11 +1,4 @@
 /*
-referenced HyperionDev's "05-005-1 CSS Overview" pdf
-source referenced for guidance on CSS structure and syntax
-
-referenced HyperionDev's "05-008 SCSS" pdf
-source referenced for guidance on SCSS structure and syntax
-source referenced for guidance on the Live Sass Compiler
-
 referenced https://www.cdnfonts.com/barlow.font
 referenced https://www.w3schools.com/css/css3_fonts.asp
 websites referenced for guidance on how to import a font that is not typically recognised by CSS to the webpage
@@ -125,7 +118,7 @@ main {
   background-color: rgb(236, 148, 84);
   color: rgb(252, 247, 244);
   width: 190px;
-  height: 70px;
+  height: 60px;
   font-family: "Barlow", sans-serif;
   font-size: 36px;
   font-weight: light;
@@ -133,6 +126,9 @@ main {
   transform: translate(-50%, -50%);
   top: 78%;
   left: 52%;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
 }
 
 .joinButton:hover {
@@ -368,4 +364,6 @@ footer {
 address {
   font-weight: normal;
   font-style: normal;
+  font-size: 14px;
+  font-family: "Barlow", sans-serif;
 }/*# sourceMappingURL=copy-cat.css.map */
