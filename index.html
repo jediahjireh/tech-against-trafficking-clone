@@ -1,12 +1,9 @@
-<!-- referenced HyperionDev's "index.html" file in the "11-001 Your First Computer Program" folder
-    for code structure on how to link this html file to a javacript file -->
+<!-- Tech Against Trafficking Clone -->
 <!doctype html>
 
-<html lang="en"> <!-- indicates language of file - English -->
+<html lang="en">
 
 <head>
-    <!-- referenced HyperionDev's YouTube task video (https://youtu.be/39SzSGJ09u8?si=hU-iMWieIBfwhgHK)
-        for HTML UNICODE (encoding system) so that special characters are defined and can output correctly -->
     <meta charset="UTF-8">
     <title>
         <Tech Against Trafficking>
@@ -21,39 +18,34 @@
 
 </head>
 
-<!-- referenced HyperionDev's "05-002-2 HTML Overview" pdf
-    source referenced for guidance on HTML structure and syntax -->
-<!-- referenced HyperionDev's "05-005-1 CSS Overview" pdf
-    source referenced for guidance on CSS structure and syntax -->
-<!-- referenced HyperionDev's "05-008 SCSS" pdf
-    source referenced for guidance on SCSS structure and syntax
-    source referenced for guidance on the Live Sass Compiler -->
-
 <body>
     <!-- styling (in "copy-cat.html", "copy-cat.scss" and "_align-format.scss")
         caters for display of form in Google Chrome and is most accurate at fullscreen size.
         the form may appear differently in other browsers (such as Safari) -->
     <header>
         <!-- logo -->
-        <img class="logo" src="images/logo.png" alt="Tech Against Trafficking logo" width="175" />
+        <img class="logo" src="images/logo.png" alt="Tech Against Trafficking logo" width="175">
         <!-- index -->
         <nav id="index">
-            <b>
-                <!-- redirect to the webpages that the original website index item links would redirect a user to
-                    referenced https://hea-www.harvard.edu/~fine/Tech/html-sentences.html
-                    website referenced for guidance on spacing entities (namely "&emsp;") -->
-                <h4>&emsp; ABOUT &emsp; ACCELERATOR PROGRAM &emsp;
+            <!-- redirect to the webpages that the original website index item links would redirect a user to
+                referenced https://hea-www.harvard.edu/~fine/Tech/html-sentences.html
+                website referenced for guidance on spacing entities (namely "&emsp;") -->
+            <h4>&emsp; ABOUT &emsp; ACCELERATOR PROGRAM &emsp;
+                <b>
                     <a href="https://techagainsttrafficking.org/news-events/">NEWS & EVENTS</a> &emsp;
                     <a href="https://techagainsttrafficking.org/interactive-map/">INTERACTIVE MAP</a> &emsp;
                     <a href="https://techagainsttrafficking.org/contact-us/">CONTACT US</a>
-                </h4>
-            </b>
+                </b>
+            </h4>
+
         </nav>
     </header>
 
     <main>
-        <img id="background" src="images/background.jpg" alt="Tech Against Trafficking background" />
+        <!-- top part of webpage background -->
+        <img id="background" src="images/background.jpg" alt="Tech Against Trafficking background">
 
+        <!-- brief description -->
         <h1 id="description" class="underlineMain">
             COMPANIES COLLABORATING<br>
             WITH GLOBAL EXPERTS TO<br>
@@ -65,9 +57,7 @@
         <nav>
             <!-- GET form -->
             <form id="joinForm" action="/copy-cat.html" method="GET">
-                <a href="https://techagainsttrafficking.org/contact-us/">
-                    <input type="submit" value="JOIN US" class="joinButton" style="shape-rendering: crispEdges;">
-                </a>
+                <a href="https://techagainsttrafficking.org/contact-us/" class="joinButton">JOIN US</a>
             </form>
         </nav>
 
@@ -152,7 +142,7 @@
 
         <article id="quote">
             <!-- quote image -->
-            <img class="quoteImage" src="images/quotationMarks.png" alt="Tech Against Trafficking Image Quote" />
+            <img class="quoteImage" src="images/quotationMarks.png" alt="Tech Against Trafficking Image Quote">
             <br><br>
             <!-- change text displayed when arrow is clicked (checked) -->
             <input type="checkbox" id="arrow">
@@ -224,7 +214,7 @@
         <article class="columnFormat">
             <div class="column">
                 <!-- article 1 -->
-                <img id="inlineImage1" src="images/image1.jpg" alt="Tech Against Trafficking Summit image" />
+                <img id="inlineImage1" src="images/image1.jpg" alt="Tech Against Trafficking Summit image">
                 <div class="articleContent">
                     <h4 class="articleHeading">
                         <b>
@@ -248,7 +238,7 @@
 
             <div class="column">
                 <!-- article 2 -->
-                <img id="inlineImage2" src="images/image2.jpg" alt="Tech Against Trafficking Joins GBCAT image" />
+                <img id="inlineImage2" src="images/image2.jpg" alt="Tech Against Trafficking Joins GBCAT image">
                 <div class="articleContent">
                     <h4 class="articleHeading">
                         <b>
@@ -277,7 +267,7 @@
         <br><br>
         <div id="closing">
             <!-- logo -->
-            <img class="logo" src="images/logo.png" alt="Tech Against Trafficking logo" />
+            <img class="logo" src="images/logo.png" alt="Tech Against Trafficking logo">
             <h2 id="contactPrompt">
                 <a href="https://techagainsttrafficking.org/contact-us/">CONTACT US</a>
             </h2>
@@ -286,14 +276,12 @@
                 <br>
                 &copy; 2020
             </h5>
-
         </div>
 
         <address>
-            <h6>
-                Website recreated: <a href="https://techagainsttrafficking.org">Tech Against Trafficking</a><br>
-                <i>by Jediah Jireh Naicker</i>
-            </h6>
+            <br>
+            Website recreated: <a href="https://techagainsttrafficking.org">Tech Against Trafficking</a><br>
+            <i>by Jediah Jireh Naicker</i>
         </address>
     </footer>
 </body>
