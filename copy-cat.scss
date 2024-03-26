@@ -1,12 +1,5 @@
 //file linked to "copy-cat.html"
 /*
-referenced HyperionDev's "05-005-1 CSS Overview" pdf
-source referenced for guidance on CSS structure and syntax
-
-referenced HyperionDev's "05-008 SCSS" pdf
-source referenced for guidance on SCSS structure and syntax
-source referenced for guidance on the Live Sass Compiler
-
 referenced https://www.cdnfonts.com/barlow.font
 referenced https://www.w3schools.com/css/css3_fonts.asp
 websites referenced for guidance on how to import a font that is not typically recognised by CSS to the webpage
@@ -158,23 +151,27 @@ main {
     @include customiseUnderline($main-highlight-colour, 30px, -70%);
 }
 
-//customise join button
+//customise join 'button'
 .joinButton {
     //button colour
     background-color: $accent-colour;
     color: $main-writing-colour;
     //button size
     width: 190px;
-    height: 70px;
+    height: 60px;
     //font specifications
     font-family: $main-font;
     font-size: $default-font-size + 20px;
     font-weight: light;
     //button position
     @include position(78%, 52%);
+    //button appearance
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
 }
 
-//change button colour when hovered over
+//change 'button' colour when hovered over
 .joinButton:hover {
     background-color: $main-writing-colour;
     color: $accent-colour;
@@ -453,4 +450,6 @@ footer {
 address {
     font-weight: normal;
     font-style: normal;
+    font-size: $default-font-size - 2px;
+    font-family: $main-font;
 }
